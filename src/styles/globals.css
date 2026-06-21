@@ -1,0 +1,11 @@
+@import 'tailwindcss';
+@config '../../tailwind.config.ts';
+
+@import '../tokens/colors.css';
+@import '../tokens/typography.css';
+@import '../tokens/spacing.css';
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+}
