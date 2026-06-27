@@ -16,19 +16,21 @@ e continuar depois sem perder o fio.
 
 ### Sessão 0 — Setup do Projeto
 - Scaffold Vite + React + TypeScript
-- Configurar Tailwind CSS
+- Configurar Tailwind CSS (v4)
 - Configurar Storybook
 - Configurar Vitest + Testing Library
 - Criar estrutura de pastas (`components/`, `tokens/`, `styles/`, `lib/`)
 - Definir e implementar design tokens (cores, tipografia, espaçamento, radius, sombras)
-- **Entregável**: projeto rodando (`npm run dev`, `npm run storybook`, `npm run test`)
+- Configurar Husky (pre-commit) + coverage gate por arquivo (90% em `src/components`, `src/lib`, `src/hooks`)
+- **Entregável**: projeto rodando (`npm run dev`, `npm run storybook`, `npm run test`) ✅
 
 ### Sessão 1 — V1: Fundamentos
 - Componentes: `Button`, `Input`, `Badge`, `Avatar`
 - Variantes, tamanhos e estados de cada um
 - Stories cobrindo todas as variantes
 - Testes de interação básicos (clique, digitação, estados disabled)
-- **Entregável**: V1 completo, documentado no Storybook
+- Convenção adotada: variantes/tamanhos via objetos JS (`Record<Variant, string>`) + `cn()` — sem `cva` ou libs de variantes (repetir em V2-V5)
+- **Entregável**: V1 completo, documentado no Storybook ✅
 
 ### Sessão 2 — V2: Interação e Overlay
 - Componentes: `Modal`, `Toast`, `Tabs`, `Tooltip`
